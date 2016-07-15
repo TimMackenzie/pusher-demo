@@ -13,6 +13,8 @@ Additional functionality available from the navigation drawer:
 * Toggle between a messaging channel and the test channel (which will pop up messages in the Pusher developer console)
 * Send a link to the project by email (both the share and send options do the same thing)
 
+![VoiceNote](https://github.com/TimMackenzie/pusher-demo/raw/master/pusher-demo-screenshot-1.png)![VoiceNote](https://github.com/TimMackenzie/pusher-demo/raw/master/pusher-demo-screenshot-2.png)
+
 
 License
 ------------
