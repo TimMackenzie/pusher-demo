@@ -1,0 +1,9 @@
+This package is licensed under the Apache 2.0 license.
+The contents of this license can be found in Apache-LICENSE-2.0.txt.
+
+Except where noted, the code for pusher-demo is copyright Simplify Now, LLC.
+
+icon:
+The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.
+
+The Pusher logo is copyright Pusher Ltd and is used in good faith under fair use.
