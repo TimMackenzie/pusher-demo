@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+repositories {
+    maven { url 'http://clojars.org/repo' }
+    maven { url "https://jitpack.io" }
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.simplifynowsoftware.pusherdemo"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        resConfigs "en"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+android {
+    // Android 6 removes the Apache HttpClient libraries entirely.
+    // This re-enables them, as they are needed by some of the libraries we depend on.
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+
+    // Dependency injection with Butter Knife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+
+    // Logging
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+
+    // The pusher java client, support subscribing and receiving channel messages
+    compile 'com.pusher:pusher-java-client:1.2.0'
+
+    // This is an Android-friendly modification of https://github.com/pusher/pusher-http-java
+    // This is needed for sending messages on a public channel without user authentication
+    compile 'com.github.TimMackenzie:pusher-http-java:1.0.0-android'
+
+    compile 'com.google.code.gson:gson:2.4' // for parsing JSON
+
+    // Apache Http classes For compiling against; runtime uses Android-supplied versions :(
+    // Needed for pusher-http-java
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile group: 'commons-codec' , name: 'commons-codec' , version: '1.9'
+}

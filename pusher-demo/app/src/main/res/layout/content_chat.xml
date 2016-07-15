@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.simplifynowsoftware.pusherdemo.ChatActivity"
+    tools:showIn="@layout/app_bar_chat"
+    android:background="@color/offWhite"
+    android:orientation="vertical"
+>
+    <include
+        android:id="@+id/current_message_bar"
+        layout="@layout/current_message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_bar_height"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+    />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/current_message_bar"
+    />
+</RelativeLayout>

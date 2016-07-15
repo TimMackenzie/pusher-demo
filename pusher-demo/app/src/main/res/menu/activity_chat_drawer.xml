@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rename"
+            android:icon="@drawable/ic_action_user"
+            android:title="@string/action_rename"
+        />
+
+        <item
+            android:id="@+id/nav_revert"
+            android:icon="@drawable/ic_action_revert"
+            android:title="@string/action_revert"
+        />
+
+        <item
+            android:id="@+id/nav_switchtest"
+            android:icon="@drawable/ic_action_switchtest"
+            android:title="@string/action_switch_test"
+        />
+    </group>
+
+    <item android:title="@string/action_section_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_action_share"
+                android:title="@string/action_share"
+            />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_action_send"
+                android:title="@string/action_send"/>
+        </menu>
+    </item>
+</menu>

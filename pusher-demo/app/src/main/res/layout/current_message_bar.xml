@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/message_bar_height"
+    android:background="@drawable/rounded_white"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+>
+    <Button
+        android:id="@+id/pusher_send_button"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/button_text_send"
+        android:drawableRight="@drawable/ic_menu_send_white"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickSend"
+    />
+
+    <EditText
+        android:id="@+id/pusher_new_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:inputType="text"
+        android:layout_toLeftOf="@+id/pusher_send_button"
+    />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="message_bar_height">60dp</dimen>
+
+    <dimen name="button_corner_radius">10dp</dimen>
+    <dimen name="button_corner_radius_less">8dp</dimen>
+
+    <dimen name="corner_radius_circle">20dp</dimen>
+
+    <dimen name="avatar_size">40dp</dimen>
+
+    <dimen name="side_column">72dp</dimen>
+</resources>

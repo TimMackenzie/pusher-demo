@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PusherDemo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_username">Change user name</string>
+    <string name="message_username">Your current user name is \n\t%1$s\nPlease enter a new user name.</string>
+
+    <string name="message_from_format">From %1$s at %2$s</string>
+    <string name="message_from_format_short">at %1$s</string>
+
+
+
+    <string name="button_text_send">Send</string>
+
+    <string name="header_title">Pusher Demo</string>
+    <string name="header_subtitle">By Tim Mackenzie</string>
+
+    <string name="action_section_communicate">Communicate</string>
+
+    <string name="action_rename">Change user name</string>
+    <string name="action_revert">Clear all messages</string>
+    <string name="action_switch_test">Toggle channel</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
+
+
+    <string name="email_subject">Take a look at this demo of Pusher on Android</string>
+    <string name="email_body">Get the code at https://github.com/TimMackenzie/pusher-demo</string>
+    <string name="email_prompt">Send email with</string>
+
+    <!-- use flavor resources to ensure this is empty on production builds -->
+    <string name="placeholder">PLACEHOLDER</string>
+
+</resources>

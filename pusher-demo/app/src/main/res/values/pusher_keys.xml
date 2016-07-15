@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        An app ID/key/secret set needs to be obtained from Pusher.com to properly configure
+        this app before it can compile and run.
+    -->
+    <string name="pusher_appid">@string/pusher_value_invalid</string>
+    <string name="pusher_key">@string/pusher_value_invalid</string>
+    <string name="pusher_secret">@string/pusher_value_invalid</string>
+
+    <string name="pusher_value_invalid">INVALID</string>
+</resources>
